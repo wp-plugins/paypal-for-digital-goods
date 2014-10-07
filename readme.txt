@@ -1,10 +1,10 @@
 === PayPal for Digital Goods ===
 Contributors: Tips and Tricks HQ
-Donate link: http://www.tipsandtricks-hq.com/paypal-for-digital-goods-wordpress-plugin
-Tags: paypal, payment, digital goods, payment gateway, instant payment, commerce, digital downloads, download, downloads, e-commerce, e-store, ecommerce, eshop
+Donate link: https://www.tipsandtricks-hq.com/paypal-for-digital-goods-wordpress-plugin
+Tags: paypal, payment, digital goods, payment gateway, instant payment, commerce, digital downloads, download, downloads, e-commerce, e-store, ecommerce, eshop, digital, goods, payment gateway
 Requires at least: 3.5
 Tested up to: 4.0
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,7 +18,7 @@ The full checkout happens in a overlay/popup window and the customer never leave
 
 This is ideal for selling file downloads via PayPal.
 
-View configuration and usage details on the [paypal for digital goods plugin](http://www.tipsandtricks-hq.com/paypal-for-digital-goods-wordpress-plugin) page
+View configuration and usage details on the [paypal for digital goods plugin](https://www.tipsandtricks-hq.com/paypal-for-digital-goods-wordpress-plugin) page
 
 = This plugin will be ideal for you if you are selling the following =
 
@@ -129,12 +129,15 @@ Yes, please visit Settings > PayPal for Digital Goods screen for options.
 
 == Screenshots ==
 See the following page for screenshots
-http://www.tipsandtricks-hq.com/paypal-for-digital-goods-wordpress-plugin
+https://www.tipsandtricks-hq.com/paypal-for-digital-goods-wordpress-plugin
 
 == Upgrade Notice ==
 None
 
 == Changelog ==
+
+= 1.1 =
+* Added session start call when the plugin initializes.
 
 = 1.0 =
 * First Release

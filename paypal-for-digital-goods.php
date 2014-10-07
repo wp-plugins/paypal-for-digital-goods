@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name:       PayPal for Digital Goods
- * Description:       This plugin provides you a shortcode [paypal_for_digital_goods] to generate a customizable PayPal payment button that lets user pay instantly in a popup.
- * Version:           1.0
+ * Description:       This plugin allows you to generate a customizable PayPal payment button that lets user pay instantly in a popup via PayPal.
+ * Version:           1.1
  * Author:            Tips and Tricks HQ
- * Author URI:        http://www.tipsandtricks-hq.com/
- * Plugin URI:        http://www.tipsandtricks-hq.com/
+ * Author URI:        https://www.tipsandtricks-hq.com/
+ * Plugin URI:        https://www.tipsandtricks-hq.com/paypal-for-digital-goods-wordpress-plugin
  * Text Domain:       ppdg_locale
  * License:           GPL2
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
@@ -14,6 +14,16 @@
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
 	die;
+}
+
+if (version_compare(PHP_VERSION, '5.4.0') >= 0) {
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
+} else {
+    if (session_id() == '') {
+        session_start();
+    }
 }
 
 /*----------------------------------------------------------------------------*
