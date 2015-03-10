@@ -78,7 +78,7 @@ You can also test it on PayPal Sandbox before going Live.
 
 == Usage ==
 
-[paypal_for_digital_goods item="Cool Script" price="50" url="http://example.com/downloads/my-script.zip" button_text="Buy Now"]
+[paypal_for_digital_goods name="Cool Script" price="50" url="http://example.com/downloads/my-script.zip" button_text="Buy Now"]
 
 == Installation ==
 
