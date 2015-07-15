@@ -85,6 +85,7 @@ class PayPalDG {
 		$nvpstr .= "&PAYMENTREQUEST_0_CURRENCYCODE=" . $currencyCodeType;
 		$nvpstr .= "&REQCONFIRMSHIPPING=0";
 		$nvpstr .= "&NOSHIPPING=1";
+                $nvpstr .= "&BUTTONSOURCE=TipsandTricks_SP";
 
 		foreach($items as $index => $item) {
 		

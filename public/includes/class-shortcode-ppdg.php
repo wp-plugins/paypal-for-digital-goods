@@ -75,8 +75,9 @@ class PPDGShortcode {
 
         $output = "<form action='" . $this->ppdg->get_setting('checkout_url') . "' METHOD='POST'> ";
 
+        $encoded_price = base64_encode($price);//Use encoded price in the form
         $output .= "<input type='hidden' value='{$name}' name='item_name' />";
-        $output .= "<input type='hidden' value='{$price}' name='item_price' />";
+        $output .= "<input type='hidden' value='{$encoded_price}' name='item_price' />";
         $output .= "<input type='hidden' value='{$quantity}' name='item_quantity' />";
         $output .= "<input type='hidden' value='{$currency}' name='currency_code' />";
         $output .= "<input type='hidden' value='{$url}' name='item_url' />";
@@ -121,6 +122,7 @@ class PPDGShortcode {
                 //' The paymentAmount is the total value of 
                 //' the purchase.
                 //'------------------------------------
+                $_POST['item_price'] = base64_decode($_POST['item_price']);//Decode the item price before using it.
 
                 if (empty($_POST['item_price'])) {
                     die('Product price must not be zero.');
