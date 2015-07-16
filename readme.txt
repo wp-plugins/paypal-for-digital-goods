@@ -135,7 +135,6 @@ https://www.tipsandtricks-hq.com/paypal-for-digital-goods-wordpress-plugin
 None
 
 == Changelog ==
-
 = 1.2 =
 * Added extra validation in the plugin.
 * Also tested on WordPress 4.3.
